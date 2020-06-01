@@ -1,1 +1,63 @@
 # Full Stack Todo List
+
+This exercise is divided in two main phases: 
+
+1. Back-End: Building a todo list API.
+2. Front-End: Creating a HTML/CSS/JS app.
+
+![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/diagram.png?raw=true)
+
+If you already did the front-end or the back-end phase in a previous exercises (or something similar) you can copy & paste your code into this boilerplate and adapt it to make it work, you will still learn a lot by doing that.
+
+## 📝 Back-end Instructions
+
+Add the endpoints to create one task, delete one task and get all tasks. Implements the Following Endpoints.
+
+[GET] /todos Get the list of todo's
+[POST] /todos Add a new todo to the list
+[DELETE] /todos/<int:position> Delete a single todo, given it's position.
+  
+## 📝 Front-end Instructions
+
+Create a HTML/CSS/JS app that allows any user to manage a todo list: 
+- List all the todos.
+- Add a new todo.
+- Delete a todo when clicking on the todo trash icon.
+
+## 🤗 Suggested steps to complete this project
+
+1. Create the HTML/CSS design for the todo list, you can [borrow this code](https://codepen.io/alesanchezr/pen/zYrOPbM) if you like, but you will have to understand it perfectly to be able to use it properly. You todo list needs to look similar to this:
+
+![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/todo-zoom-out.png?raw=true)
+
+🤘🏼 Note: You can create your own design if you are feeling confident.
+
+2. Once you finished the HTML and CSS try creating a `function addTodo(title)` inside of your `src/front/js/index.js` that receives the task title and appends a new item to the list of todos. It's recommended to use the DOM [appendChild function](https://www.w3schools.com/jsref/met_node_appendchild.asp) to create the new item inside the list of todos, you can try calling the function yourself and see if it works.
+
+⚠️ Important: Each task must contain a trash icon that shows when the task is hovered.
+
+3. Using the [Fetch API](https://content.breatheco.de/lesson/the-fetch-javascript-api) on your `src/front/js/index.js` write a fetch call inside the window.onload to get all the todos from the API: `GET /todos`.
+
+Remember that according to the fetch API, the fetch function must receive two functions, one for the `.then()` and one for the `.catch()`. Those functions will be called depending on the request successfull completition or failure
+
+```js
+fetch('url', options)
+  .then(response => {
+    if(response.status == 200) return response.json();
+  })
+  .then(response => {
+    // successfully completed, you should call the addTodo function here.
+  })
+  .catch(error => console.log("Error fetching todos:", error));
+```
+
+4. Once the fetch to get all the todos is finished you should render the todos in HTML by deleting all the items inside the list and calling the function `addTodo` as many times as needed.
+
+5. To implement the delete feature: On your `src/front/js/index.js`, create a function called `deleteTask` that will be called when any trash icon is clicked.
+
+![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/delete-task.png?raw=true)
+
+5.1 The function gets called onClick on the trash can icon.
+5.2 The function receives one parameter `e` that contains the event information with `e.target` being the trash can that was clicked.
+5.3 Using the fetchAPI the function must do a DELETE request to your API: `DELETE /todo/<int:position>`
+
