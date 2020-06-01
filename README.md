@@ -26,6 +26,8 @@ Create a HTML/CSS/JS app that allows any user to manage a todo list:
 
 ## 🤗 Suggested steps to complete this project
 
+### Show/Render the todos
+
 1. Create the HTML/CSS design for the todo list, you can [borrow this code](https://codepen.io/alesanchezr/pen/zYrOPbM) if you like, but you will have to understand it perfectly to be able to use it properly. You todo list needs to look similar to this:
 
 ![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/todo-zoom-out.png?raw=true)
@@ -53,6 +55,8 @@ fetch('url', options)
 
 4. Once the fetch to get all the todos is finished you should render the todos in HTML by deleting all the items inside the list and calling the function `addTodo` as many times as needed.
 
+### Delete one todo
+
 5. To implement the delete feature: On your `src/front/js/index.js`, create a function called `deleteTask` that will be called when any trash icon is clicked.
 
 ![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/delete-task.png?raw=true)
@@ -61,3 +65,21 @@ fetch('url', options)
 5.2 The function receives one parameter `e` that contains the event information with `e.target` being the trash can that was clicked.
 5.3 Using the fetchAPI the function must do a DELETE request to your API: `DELETE /todo/<int:position>`
 
+### Add one Todo
+
+This feature is triggered after the user types the title of the todo into the `<input>` located at the top of the list, and then the user clicks on the `add` button beside the input.
+
+6. Add an onClick listener to the add button that calls a new function `createTodo`.
+6.1 On your `src/front/js/index.js` declare a function `createTodo` that recives `e` as a parameter with the event information.
+6.2 Use the document.querySelector function to select the input from the DOM and get it's value (the input value will be whatever the user typed as the todo title).
+6.3 Store that value in a variable.
+6.4 Use the fetch API to to create a `POST /todo` and add the task title as the body of the request with content-type json.
+6.5 Wait for the response to come back by using the `.then()` and `.catch()` available.
+6.6 If the response lands on the .then check for the status code.
+6.7 If the status code is 200 call the function `addTodo` that you declared on the second step, that function will append the todo into the list of HTML items.
+
+
+## 😎 Feeling confident?
+
+- Implement a method to mark the todos as done, add a second button beside the trash can to mark the task as read, when the task is marked as read you can use the line-through CSS property.
+- Implement a method to update the todo title, you will have to add a new edpoing on your API for `PUT /todo/<int:position>` and a `updateTodo` javascript function on your `index.js` that gets called then a TODO is edited. You can add a pencil icon that when the user clicks on it it replaces the todo element with a text input that the user can write on it.
