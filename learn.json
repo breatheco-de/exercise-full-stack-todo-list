@@ -5,7 +5,7 @@
 	"status": "published",
 	"translations": ["es", "us"],
 	"difficulty": "intermediate",
-	"preview": "https://github.com/breatheco-de/exercise-full-stack-todo-list/blob/master/preview.jpg?raw=true",
+	"preview": "https://github.com/breatheco-de/exercise-full-stack-todo-list/blob/master/preview.png?raw=true",
 	"duration" : 16,
 	"technologies": ["flask", "python", "json", "vanillajs", "apis", "the-dom"],
 	"talents": []
