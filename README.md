@@ -17,9 +17,9 @@ Start the project with the `vanillajs + flask boilerplate`, if you are not using
 
 Add the endpoints to create one task, delete one task and get all tasks. Implements the Following Endpoints.
 
-`[GET] /todos` Get the list of todo's
-`[POST] /todos` Add a new todo to the list
-`[DELETE] /todos/<int:position>` Delete a single todo, given it's position.
+`[GET] /todos` Get the list of todo's.  
+`[POST] /todos` Add a new todo to the list.  
+`[DELETE] /todos/<int:position>` Delete a single todo, given it's position.  
   
 ## 📝 Front-end Instructions
 
