@@ -9,6 +9,10 @@ This exercise is divided in two main phases:
 
 If you already did the front-end or the back-end phase in a previous exercises (or something similar) you can copy & paste your code into this boilerplate and adapt it to make it work, you will still learn a lot by doing that.
 
+## 💻 Installation
+
+Start the project with the `vanillajs + flask boilerplate`, if you are not using Gitpod you will need Python 3 and Node 10+.
+
 ## 📝 Back-end Instructions
 
 Add the endpoints to create one task, delete one task and get all tasks. Implements the Following Endpoints.
