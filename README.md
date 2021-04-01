@@ -17,7 +17,10 @@ The first step to start coding is cloning the [vanillajs + flask boilerplate](ht
 
 a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://tinyurl.com/yfj4grel).
 
-b) If working locally type the following command from your command line: `$ git clone https://tinyurl.com/yfj4grel`.
+b) If working locally type the following command from your command line: 
+```sh
+$ git clone https://tinyurl.com/yfj4grel
+```
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
