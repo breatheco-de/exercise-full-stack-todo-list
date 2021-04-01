@@ -9,11 +9,18 @@ This exercise is divided in two main phases:
 
 If you already did the front-end or the back-end phase in a previous exercises (or something similar) you can copy & paste your code into this boilerplate and adapt it to make it work, you will still learn a lot by doing that.
 
-## 💻 Installation
+## 🌱  How to start this project
 
-Start the project with the `vanillajs + flask boilerplate`, if you are not using Gitpod you will need Python 3 and Node 10+.
+Do not clone this repository.
 
-## 📝 Back-end Instructions
+The first step to start coding is cloning the [vanillajs + flask boilerplate](https://tinyurl.com/yfj4grel) on your local computer or opening it using gitpod.
+
+a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://tinyurl.com/yfj4grel).
+
+b) If working locally type the following command from your command line: `$ git clone https://tinyurl.com/yfj4grel`.
+
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
 
 Add the endpoints to create one task, delete one task and get all tasks. Implements the Following Endpoints.
 
