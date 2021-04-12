@@ -97,4 +97,4 @@ This feature is triggered after the user types the title of the todo into the `<
 ## 😎 Feeling confident?
 
 - Implement a method to mark the todos as done, add a second button beside the trash can to mark the task as read, when the task is marked as read you can use the line-through CSS property.
-- Implement a method to update the todo title, you will have to add a new edpoing on your API for `PUT /todo/<int:position>` and a `updateTodo` javascript function on your `index.js` that gets called then a TODO is edited. You can add a pencil icon that when the user clicks on it it replaces the todo element with a text input that the user can write on it.
+- Implement a method to update the todo title, you will have to add a new endpoint on your API for `PUT /todo/<int:position>` and a `updateTodo` javascript function on your `index.js` that gets called then a TODO is edited. You can add a pencil icon that when the user clicks on it it replaces the todo element with a text input that the user can write on it.
