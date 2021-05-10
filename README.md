@@ -9,9 +9,20 @@ This exercise is divided in two main phases:
 
 If you already did the front-end or the back-end phase in a previous exercises (or something similar) you can copy & paste your code into this boilerplate and adapt it to make it work, you will still learn a lot by doing that.
 
-## 💻 Installation
+## 🌱  How to start this project
 
-Start the project with the `vanillajs + flask boilerplate`, if you are not using Gitpod you will need Python 3 and Node 10+.
+Do not clone this repository.
+
+The first step to start coding is cloning the [vanillajs + flask boilerplate](https://tinyurl.com/yfj4grel) on your local computer or opening it using gitpod.
+
+a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://tinyurl.com/yfj4grel).
+
+b) If working locally type the following command from your command line: 
+```sh
+$ git clone https://tinyurl.com/yfj4grel
+```
+
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
 ## 📝 Back-end Instructions
 
@@ -86,4 +97,4 @@ This feature is triggered after the user types the title of the todo into the `<
 ## 😎 Feeling confident?
 
 - Implement a method to mark the todos as done, add a second button beside the trash can to mark the task as read, when the task is marked as read you can use the line-through CSS property.
-- Implement a method to update the todo title, you will have to add a new edpoing on your API for `PUT /todo/<int:position>` and a `updateTodo` javascript function on your `index.js` that gets called then a TODO is edited. You can add a pencil icon that when the user clicks on it it replaces the todo element with a text input that the user can write on it.
+- Implement a method to update the todo title, you will have to add a new endpoint on your API for `PUT /todo/<int:position>` and a `updateTodo` javascript function on your `index.js` that gets called then a TODO is edited. You can add a pencil icon that when the user clicks on it it replaces the todo element with a text input that the user can write on it.
