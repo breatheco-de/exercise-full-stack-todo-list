@@ -7,15 +7,13 @@ Este ejercicio está dividido en dos fases:
 
 ![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/diagram.png?raw=true)
 
-Si ya hiciste el fronte-end o back-end en algún ejercicio previo ( o algo similar) puedes copiar y pegar tu código dentro de este boilerplate y adaptarlo para que funcione, aprenderás mucho haciéndolo.
+Si ya hiciste el front-end o back-end en algún ejercicio previo ( o algo similar) puedes copiar y pegar tu código dentro de este boilerplate y adaptarlo para que funcione, aprenderás mucho haciéndolo.
 
-## 🌱  How to start this project
-
-Do not clone this repository.
+## 🌱  Cómo iniciar el proyecto
 
 No clones este repositorio. El primer paso para comenzar a codificar es clonar el [vanillajs + flask boilerplate](https://tinyurl.com/yfj4grel):
 
-a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [haciendo clic aquí](https://tinyurl.com/yfj4grel).
+a) Si usas Gitpod (recomendado) puedes clonar el boilerplate [haciendo clic aquí](https://tinyurl.com/yfj4grel).
 
 b) Si trabajas localmente, escribe el siguiente comando en tu terminal: 
 ```sh
@@ -43,7 +41,7 @@ Crea tu App HTML/CSS/JS que le permita a cualquier usuario manejar una todo list
 
 ### Muestra/Render los todos o tareas
 
-1. Crea el diseño HTML/CSS design para la todo list o lista de tareas, puedes tomar [prestado este código](https://codepen.io/alesanchezr/pen/zYrOPbM) si quieres, pero tendrás que entenderlo para poder usarlo correctamente. Tu lista de todos o tareas debe verse similar a esta: 
+1. Crea el diseño HTML/CSS para la todo list o lista de tareas, puedes tomar [prestado este código](https://codepen.io/alesanchezr/pen/zYrOPbM) si quieres, pero tendrás que entenderlo para poder usarlo correctamente. Tu lista de todos o tareas debe verse similar a esta: 
 
 ![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/todo-zoom-out.png?raw=true)
 
@@ -51,11 +49,11 @@ Crea tu App HTML/CSS/JS que le permita a cualquier usuario manejar una todo list
 
 2. Una vez terminado el HTML y CSS intenta crear una función `function addTodo(title)` dentro de tu archivo `src/front/js/index.js` que reciva el título de la tarea y le añada un nuevo item a la lista de todos o tareas. Te recomendamos usar la función del DOM [appendChild](https://www.w3schools.com/jsref/met_node_appendchild.asp) para crear un nuevo item dentro de la lista de todos o tareas, puedes llamar a la función tu mismo para ver si funciona.
 
-⚠️ Important: Cada tarea debe tener un icono de la basura que se muestra cuando haces "hover" en la tarea o todo. 
+⚠️ Importante: Cada tarea debe tener un icono de la basura que se muestra cuando haces "hover" en la tarea o todo. 
 
 3. Usando la [Fetch API](https://content.breatheco.de/lesson/the-fetch-javascript-api) en tu archivo `src/front/js/index.js` escribe un FETCH dentro de window.onload para obtener todos los todos o tareas de la API: `GET /todos`.
 
-Recuerda que de acuerdo a la fetch API, fetch debe recibir dos funciones, una para el `.then()` y una para el `.catch()`. Esas funciones serán llamadas dependiendo de si la solicitud fue existosa o falló.
+Recuerda que de acuerdo a la fetch API, fetch debe recibir dos funciones, una para el `.then()` y una para el `.catch()`. Esas funciones serán llamadas dependiendo de si la solicitud fue exitosa o falló.
 
 ```js
 fetch('url', options)
@@ -72,12 +70,12 @@ fetch('url', options)
 
 ### Eliminar un todo o tarea
 
-5. Para implementar delete: En tu archivo `src/front/js/index.js`, crea una función llamada `deleteTask` que será llamad cada que se haga clic en algún icono de la basura. 
+5. Para implementar delete: En tu archivo `src/front/js/index.js`, crea una función llamada `deleteTask` que será llamada cada que se haga clic en algún icono de la basura. 
 
 ![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/delete-task.png?raw=true)
 
 5.1 Se llama a la función con onClick en el icono de la basura.
-5.2 a función recibe un parámetro `e` que contiene la información del evento, siendo `e.target` el icono de la basura al cual se le hizo clic. 
+5.2 La función recibe un parámetro `e` que contiene la información del evento, siendo `e.target` el icono de la basura al cual se le hizo clic. 
 5.3 Usando la fetchAPI, la función debe hacer una solicitud DELETE a tu API: `DELETE /todo/<int:position>`
 
 ### Añadir un todo
@@ -95,6 +93,6 @@ Esta función se activa después de que el usuario escribe el título de la tare
 
 ## 😎 ¿Te sientes seguro?
 
-- Implementa un método para marcar los todos como hechos, agregua un segundo botón al lado de la papelera para marcar la tarea como leída, cuando la tarea esté marcada como leída, puedes usar la propiedad CSS line-through.
+- Implementa un método para marcar los todos como hechos, agrega un segundo botón al lado de la papelera para marcar la tarea como leída, cuando la tarea esté marcada como leída, puedes usar la propiedad CSS line-through.
 - Implementa un método para actualizar el título de todo o tarea, tendrás que agregar un nuevo endpoint en tu API para `PUT / todo / <int: position>` y una función javascript `updateTodo` en tu` index.js` que se llama luego se edita un TODO o tareas. Puedes agregar un ícono de lápiz que cuando el usuario haga clic en él, reemplaza el elemento del todo o tarea con una entrada de texto que el usuario puede escribir en él.
 
