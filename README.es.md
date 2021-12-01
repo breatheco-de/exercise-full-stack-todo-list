@@ -3,6 +3,7 @@
 Este ejercicio está dividido en dos fases:
 
 1. Back-End: CRear un API de TODO list o lista de tareas.
+
 2. Front-End: Crear una app HTML/CSS/JS.
 
 ![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/diagram.png?raw=true)
@@ -34,7 +35,9 @@ Añade los endpoints para crear una tarea, eliminarla y obtener (get) todas las 
 
 Crea tu App HTML/CSS/JS que le permita a cualquier usuario manejar una todo list o lista de tareas. 
 - Listar todos los todos o tareas.
+
 - Agregar un todo o tarea
+
 - Eliminar todo o tarea cuando se haga clic en el icono de la basura.
 
 ## Pasos sugeridos para completar este proyecto.
@@ -75,7 +78,9 @@ fetch('url', options)
 ![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/delete-task.png?raw=true)
 
 5.1 Se llama a la función con onClick en el icono de la basura.
+
 5.2 La función recibe un parámetro `e` que contiene la información del evento, siendo `e.target` el icono de la basura al cual se le hizo clic. 
+
 5.3 Usando la fetchAPI, la función debe hacer una solicitud DELETE a tu API: `DELETE /todo/<int:position>`
 
 ### Añadir un todo
@@ -83,16 +88,24 @@ fetch('url', options)
 Esta función se activa después de que el usuario escribe el título de la tarea en el `<input>` ubicado en la parte superior de la lista, y luego el usuario hace clic en el botón `agregar` al lado de la entrada o input.
 
 6. Agrega un listener onCLick al botón añadir que llama a una nueva función `createTodo`.
+
 6.1 En tu `src / front / js / index.js` declara una función` createTodo` que reciba `e` como parámetro con la información del evento.
+
 6.2 Usa la función document.querySelector para seleccionar la entrada del DOM y obtener su valor (el valor de entrada será lo que el usuario haya escrito como título de la tarea).
+
 6.3 Almacena ese valor en una variable.
+
 6.4 Utiliza la fetch API para crear un `POST / todo` y agrega el título de la tarea como el body de la solicitud con el tipo de contenido json.
+
 6.5 Espera a que vuelva la respuesta usando el `.then ()` y `.catch ()` disponibles.
+
 6.6 Si la respuesta llega al .then,  verifica el código de estado.
+
 6.7 Si el código de estado es 200, llama a la función `addTodo` que declaraste en el segundo paso, esa función agregará la tarea a la lista de elementos HTML.
 
 ## 😎 ¿Te sientes seguro?
 
 - Implementa un método para marcar los todos como hechos, agrega un segundo botón al lado de la papelera para marcar la tarea como leída, cuando la tarea esté marcada como leída, puedes usar la propiedad CSS line-through.
+ 
 - Implementa un método para actualizar el título de todo o tarea, tendrás que agregar un nuevo endpoint en tu API para `PUT / todo / <int: position>` y una función javascript `updateTodo` en tu` index.js` que se llama luego se edita un TODO o tareas. Puedes agregar un ícono de lápiz que cuando el usuario haga clic en él, reemplaza el elemento del todo o tarea con una entrada de texto que el usuario puede escribir en él.
 
