@@ -6,7 +6,7 @@ Este ejercicio está dividido en dos fases:
 
 2. Front-End: Crear una app HTML/CSS/JS.
 
-![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/diagram.png?raw=true)
+![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/assets/diagram.png?raw=true)
 
 Si ya hiciste el front-end o back-end en algún ejercicio previo ( o algo similar) puedes copiar y pegar tu código dentro de este boilerplate y adaptarlo para que funcione, aprenderás mucho haciéndolo.
 
@@ -46,7 +46,7 @@ Crea tu App HTML/CSS/JS que le permita a cualquier usuario manejar una todo list
 
 1. Crea el diseño HTML/CSS para la todo list o lista de tareas, puedes tomar [prestado este código](https://codepen.io/alesanchezr/pen/zYrOPbM) si quieres, pero tendrás que entenderlo para poder usarlo correctamente. Tu lista de todos o tareas debe verse similar a esta: 
 
-![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/todo-zoom-out.png?raw=true)
+![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/assets/todo-zoom-out.png?raw=true)
 
 🤘🏼 Nota: Si te sientes seguro, puedes crear tu propio diseño. 
 
@@ -75,7 +75,7 @@ fetch('url', options)
 
 5. Para implementar delete: En tu archivo `src/front/js/index.js`, crea una función llamada `deleteTask` que será llamada cada que se haga clic en algún icono de la basura. 
 
-![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/delete-task.png?raw=true)
+![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/assets/delete-task.png?raw=true)
 
 5.1 Se llama a la función con onClick en el icono de la basura.
 

@@ -1,12 +1,26 @@
 {
-	"slug" : "full-stack-todo-list",
-	"title" : "Todo List API + VanillaJS Front",
-	"description": "Let's build a todo list from zero to publish using a Python Flask API and a Vanilla.js front-end",
-	"status": "published",
-	"translations": ["es", "us"],
-	"difficulty": "intermediate",
-	"preview": "https://github.com/breatheco-de/exercise-full-stack-todo-list/blob/master/preview.png?raw=true",
-	"duration" : 16,
-	"technologies": ["flask", "python", "json", "vanillajs", "apis", "the-dom"],
-	"talents": []
+    "slug": "full-stack-todo-list",
+    "title": "Todo List API + VanillaJS Front",
+    "description": "Let's build a todo list from zero to publish using a Python Flask API and a Vanilla.js front-end",
+    "status": "published",
+    "translations": [
+        "es",
+        "us"
+    ],
+    "difficulty": "intermediate",
+    "preview": "https://github.com/breatheco-de/exercise-full-stack-todo-list/blob/master/assets/preview.png?raw=true",
+    "duration": 16,
+    "technologies": [
+        "flask",
+        "python",
+        "json",
+        "vanillajs",
+        "apis",
+        "the-dom"
+    ],
+    "talents": [],
+    "autoPlay": false,
+    "projectType": "project",
+    "validationAt": 1662661097372,
+    "validationStatus": "error"
 }

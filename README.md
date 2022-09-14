@@ -5,7 +5,7 @@ This exercise is divided in two main phases:
 1. Back-End: Building a todo list API.
 2. Front-End: Creating a HTML/CSS/JS app.
 
-![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/diagram.png?raw=true)
+![Exercise diagram](https://github.com/breatheco-de/full-stack-todo-list/blob/master/assets/diagram.png?raw=true)
 
 If you already did the front-end or the back-end phase in a previous exercises (or something similar) you can copy & paste your code into this boilerplate and adapt it to make it work, you will still learn a lot by doing that.
 
@@ -45,7 +45,7 @@ Create a HTML/CSS/JS app that allows any user to manage a todo list:
 
 1. Create the HTML/CSS design for the todo list, you can [borrow this code](https://codepen.io/alesanchezr/pen/zYrOPbM) if you like, but you will have to understand it perfectly to be able to use it properly. You todo list needs to look similar to this:
 
-![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/todo-zoom-out.png?raw=true)
+![Todo List Zoomed Out](https://github.com/breatheco-de/full-stack-todo-list/blob/master/assets/todo-zoom-out.png?raw=true)
 
 🤘🏼 Note: You can create your own design if you are feeling confident.
 
@@ -74,7 +74,7 @@ fetch('url', options)
 
 5. To implement the delete feature: On your `src/front/js/index.js`, create a function called `deleteTask` that will be called when any trash icon is clicked.
 
-![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/delete-task.png?raw=true)
+![Single Task](https://github.com/breatheco-de/full-stack-todo-list/blob/master/assets/delete-task.png?raw=true)
 
 5.1 The function gets called onClick on the trash can icon.
 5.2 The function receives one parameter `e` that contains the event information with `e.target` being the trash can that was clicked.
