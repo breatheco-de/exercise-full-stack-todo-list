@@ -1,4 +1,6 @@
-# Full Stack Todo List
+<!--hide-->
+# Lista Completa de Tareas Pendientes
+<!--endhide-->
 
 Este ejercicio está dividido en dos fases:
 
@@ -107,5 +109,5 @@ Esta función se activa después de que el usuario escribe el título de la tare
 
 - Implementa un método para marcar los todos como hechos, agrega un segundo botón al lado de la papelera para marcar la tarea como leída, cuando la tarea esté marcada como leída, puedes usar la propiedad CSS line-through.
  
-- Implementa un método para actualizar el título de todo o tarea, tendrás que agregar un nuevo endpoint en tu API para `PUT / todo / <int: position>` y una función javascript `updateTodo` en tu` index.js` que se llama luego se edita un TODO o tareas. Puedes agregar un ícono de lápiz que cuando el usuario haga clic en él, reemplaza el elemento del todo o tarea con una entrada de texto que el usuario puede escribir en él.
+- Implementa un método para actualizar el título de todo o tarea, tendrás que agregar un nuevo endpoint en tu API para `PUT / todo / <int: position>` y una función javascript `updateTodo` en tu` index.js` que se llama, luego se edita un TODO o tareas. Puedes agregar un ícono de lápiz que cuando el usuario haga clic en él, reemplaza el elemento del todo o tarea con una entrada de texto que el usuario puede escribir en él.
 
