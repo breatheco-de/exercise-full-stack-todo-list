@@ -1,7 +1,13 @@
 {
     "slug": "full-stack-todo-list",
-    "title": "Todo List API + VanillaJS Front",
-    "description": "Let's build a todo list from zero to publish using a Python Flask API and a Vanilla.js front-end",
+    "title": {
+        "es": "Lista de Tareas API + Frontend VanillaJS",
+        "us": "Todo List API + VanillaJS Front"
+    },
+    "description": {
+        "es": "Construye una lista de tareas full stack utilizando Flask para la API y Vanilla JS para el frontend. Practica operaciones CRUD, consumo de API con Fetch y manipulación del DOM. Un proyecto práctico para afinar tus habilidades tanto en el backend como en el frontend en un solo lugar.",
+        "us": "Build a full stack TODO list using Flask for the API and Vanilla JS for the frontend. Practice CRUD operations, API consumption with Fetch, and DOM manipulation. A hands-on project to sharpen both backend and frontend skills in one place."
+    },
     "status": "published",
     "translations": [
         "es",
@@ -22,5 +28,8 @@
     "autoPlay": false,
     "projectType": "project",
     "validationAt": 1662661097372,
-    "validationStatus": "error"
+    "validationStatus": "error",
+    "telemetry": {
+	  "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=196"
+	  }
 }

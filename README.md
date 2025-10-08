@@ -1,4 +1,6 @@
+<!--hide-->
 # Full Stack Todo List
+<!--endhide-->
 
 This exercise is divided in two main phases: 
 
@@ -9,20 +11,23 @@ This exercise is divided in two main phases:
 
 If you already did the front-end or the back-end phase in a previous exercises (or something similar) you can copy & paste your code into this boilerplate and adapt it to make it work, you will still learn a lot by doing that.
 
+<how-to-start>
+  
 ## 🌱  How to start this project
 
 Do not clone this repository.
 
-The first step to start coding is cloning the [vanillajs + flask boilerplate](https://tinyurl.com/yfj4grel) on your local computer or opening it using gitpod.
+We recommend opening the `vanillajs + flask boilerplate`, using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can [clone the GitHub repository](https://4geeks.com/how-to/github-clone-repository) on your local computer using the `git clone` command.
 
-a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://tinyurl.com/yfj4grel).
+This is the repository you need to open or clone:
 
-b) If working locally type the following command from your command line: 
 ```sh
 $ git clone https://tinyurl.com/yfj4grel
 ```
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
+</how-to-start>
 
 ## 📝 Back-end Instructions
 
@@ -92,7 +97,6 @@ This feature is triggered after the user types the title of the todo into the `<
 6.5 Wait for the response to come back by using the `.then()` and `.catch()` available.
 6.6 If the response lands on the .then check for the status code.
 6.7 If the status code is 200 call the function `addTodo` that you declared on the second step, that function will append the todo into the list of HTML items.
-
 
 ## 😎 Feeling confident?
 
