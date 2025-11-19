@@ -60,7 +60,7 @@ Create a HTML/CSS/JS app that allows any user to manage a todo list:
 
 3. Using the [Fetch API](https://content.breatheco.de/lesson/the-fetch-javascript-api) on your `src/front/js/index.js` write a fetch call inside the window.onload to get all the todos from the API: `GET /todos`.
 
-Remember that according to the fetch API, the fetch function must receive two functions, one for the `.then()` and one for the `.catch()`. Those functions will be called depending on the request successfull completition or failure
+Remember that according to the fetch API, the fetch function must receive two functions, one for the `.then()` and one for the `.catch()`. Those functions will be called depending on the request successful completition or failure
 
 ```js
 fetch('url', options)
